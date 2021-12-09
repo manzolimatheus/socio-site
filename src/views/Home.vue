@@ -10,7 +10,6 @@
       </div>
     </div>
     <div class="content" v-show="pageLoaded">
-      <Carousel :items="temas.slice(2)" />
       <h1 class="text-center p-3">Os movimentos sociais</h1>
       <div class="container">
         <div class="row w-100 mx-auto">
@@ -30,13 +29,11 @@
 
 <script>
 import Card from "@/components/Card.vue";
-import Carousel from "@/components/Carousel.vue";
 
 export default {
   name: "Home",
   components: {
     Card,
-    Carousel,
   },
   data() {
     return {
